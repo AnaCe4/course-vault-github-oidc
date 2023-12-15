@@ -63,7 +63,7 @@ jobs:
         env:
           VAULT_ADDR: http://127.0.0.1:8200
         run: |
-          vault write auth/gha/role/FIRST_01_EXAMPLE_TUTORIAL - << EOF
+          vault write auth/gha/role/FIRST_01_EXAMPLE_TUTORIAL  << EOF
           {
             "role_type": "jwt",
             "user_claim": "actor",
